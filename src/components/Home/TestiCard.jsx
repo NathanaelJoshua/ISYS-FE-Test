@@ -7,7 +7,7 @@ export const TestiCard = (props) => {
   const rate = props.item.rate;
   const pic = props.item.pic;
   const position = props.item.position;
-  const imageVector = `${process.env.PUBLIC_URL} ./image/vectorTesti.png`;
+  const imageVector = `${process.env.PUBLIC_URL} ./image/VectorTesti.png`;
   const imageDecor = `${process.env.PUBLIC_URL} ./image/decor.png`;
 
   const stars = [];

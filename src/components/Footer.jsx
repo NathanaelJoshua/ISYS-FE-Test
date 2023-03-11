@@ -11,9 +11,16 @@ export const Footer = () => {
   ];
   return (
     <div className="bg-[#27424D] lg:px-[135px] px-10 py-5 flex justify-between items-center">
-      <div className="font-bold text-white text-xl">{AppName}</div>
+      <div className="font-bold text-white text-xl">
+        {AppName}
+        <div className="text-white font-normal text-sm flex md:hidden">
+          {content}
+        </div>
+      </div>
 
-      <div className="text-white font-normal text-sm">{content}</div>
+      <div className="text-white font-normal text-sm hidden md:flex">
+        {content}
+      </div>
 
       <div className="flex gap-2">
         {social.map((item, index) => (

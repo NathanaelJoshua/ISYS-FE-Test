@@ -39,7 +39,7 @@ export const HowItWork = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
         {content.map((item, index) => (
           <div
-            className="p-7 flex flex-col gap-3 items-center justify-center text-center"
+            className="p-8 flex flex-col gap-3 items-center justify-center text-center"
             style={{ backgroundColor: item.bg }}
             key={index}
           >
@@ -50,7 +50,7 @@ export const HowItWork = () => {
               <img
                 src={item.src}
                 alt={item.title}
-                className="object-cover w-[20px] h-[20px]"
+                className="w-[20px] h-[20px]"
               />
             </div>
             <div className="text-white font-semibold text-xl">{item.title}</div>

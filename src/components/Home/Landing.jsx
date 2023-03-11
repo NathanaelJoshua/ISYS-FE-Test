@@ -20,11 +20,11 @@ export const Landing = () => {
     "Affordable prices",
   ];
   return (
-    <div className="flex items-center justify-center flex-col-reverse md:flex-row mb-5">
-      <div className="w-full xl:w-1/2">
+    <div className="flex items-center justify-center flex-col lg:flex-row mb-5">
+      <div className="w-full lg:w-1/2">
         <div className="lg:pl-[135px] px-10 text-sm lg:text-md py-5">
           {/* title */}
-          <div className="xl:text-[64px] text-4xl lg:text-[40px] font-semibold flex flex-wrap whitespace-nowrap md:gap-3 leading-[1.1]">
+          <div className="xl:text-[64px] text-4xl lg:text-[40px] font-semibold flex flex-wrap whitespace-nowrap leading-[1.1] gap-x-3">
             <p>
               Get Skills <br className="hidden lg:flex" /> From Our Top
             </p>
@@ -61,18 +61,22 @@ export const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full pb-10 px-10 xl:w-1/2 items-start relative">
-        <div className="">
-          <img src={image1} alt={"LandingImage"} className="" />
-          <div className="flex gap-5 items-center w-full justify-between lg:px-[135px] px-10">
+      <div className="flex justify-center w-full px-10 lg:w-1/2 items-start relative ">
+        <div className="flex items-center flex-col justify-center py-5 md:py-0">
+          <img
+            src={image1}
+            alt={"LandingImage"}
+            className="xl:w-full lg:w-4/5 md:w-3/4"
+          />
+          <div className="grid gap-3  items-center w-full justify-start grid-cols-2 xl:grid-cols-4">
             {imageLogo.map((item, index) => (
-              <div key={index} className="flex">
+              <div key={index} className="flex items-center justify-center">
                 <img src={item} alt={item} className="max-w-[100px]" />
               </div>
             ))}
           </div>
         </div>
-        <div className="absolute top-0 right-0 -z-10">
+        <div className="absolute top-0 right-0 -z-10 xl:w-5/6 lg:w-4/5 w-3/4">
           <img src={abstract} alt={"LandingImage"} className="object-cover" />
         </div>
       </div>
