@@ -20,13 +20,13 @@ export const Landing = () => {
     "Affordable prices",
   ];
   return (
-    <div className="flex items-center justify-center flex-col lg:flex-row mb-5">
-      <div className="w-full lg:w-1/2">
+    <div className="flex items-center justify-center flex-col sm:flex-row mb-5">
+      <div className="w-full sm:w-1/2">
         <div className="lg:pl-[135px] px-10 text-sm lg:text-md py-5">
           {/* title */}
-          <div className="xl:text-[64px] text-4xl lg:text-[40px] font-semibold flex flex-wrap whitespace-nowrap leading-[1.1] gap-x-3">
+          <div className="xl:text-[64px] text-4xl lg:text-[40px] font-semibold flex flex-col whitespace-nowrap leading-[1.1] gap-x-3">
             <p>
-              Get Skills <br className="hidden lg:flex" /> From Our Top
+              Get Skills <br className="flex" /> From Our Top
             </p>
             <p className="colorPrimary">{titleHighlight}</p>
           </div>
@@ -61,7 +61,7 @@ export const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full px-10 lg:w-1/2 items-start relative ">
+      <div className="flex justify-center w-full px-10 sm:w-1/2 items-start relative ">
         <div className="flex items-center flex-col justify-center py-5 md:py-0">
           <img
             src={image1}
